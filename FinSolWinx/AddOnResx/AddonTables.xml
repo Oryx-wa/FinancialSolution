@@ -1,0 +1,1100 @@
+﻿<Tables>
+  <usertable>
+    <TableName>OWA_FSDIVIDEND</TableName>
+    <TableDescription>Facility Dividends</TableDescription>
+    <Tabletype>3</Tabletype>
+    <Secondary>1</Secondary>
+    <Created>N</Created>
+    <UseSequence>0</UseSequence>
+    <UserObjects>
+      <CanCancel>Y</CanCancel>
+      <CanClose>Y</CanClose>
+      <CanCreateDefaultForm>Y</CanCreateDefaultForm>
+      <CanDelete>Y</CanDelete>
+      <CanFind>Y</CanFind>
+      <CanLog>N</CanLog>
+      <LogTableName />
+      <CanYearTransfer>N</CanYearTransfer>
+      <ManageSeries>Y</ManageSeries>
+      <Code>Dividend</Code>
+      <Name>Dividends</Name>
+      <ObjectType>3</ObjectType>
+      <TableName>OWA_FSDIVIDEND</TableName>
+      <Created>N</Created>
+      <UseSequence>0</UseSequence>
+    </UserObjects>
+    <TableFields>
+      <FieldID>0</FieldID>
+      <TableName>OWA_FSDIVIDEND</TableName>
+      <Name>memberID</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Member ID</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>1</FieldID>
+      <TableName>OWA_FSDIVIDEND</TableName>
+      <Name>Year</Name>
+      <Type>0</Type>
+      <Size>4</Size>
+      <Description>Dividend Year</Description>
+      <EditSize>4</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>2</FieldID>
+      <TableName>OWA_FSDIVIDEND</TableName>
+      <Name>intrRate</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Interest Rate</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>R</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>3</FieldID>
+      <TableName>OWA_FSDIVIDEND</TableName>
+      <Name>Amount</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Dividend Amount</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>4</FieldID>
+      <TableName>OWA_FSDIVIDEND</TableName>
+      <Name>Status</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Status</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+  </usertable>
+  <usertable>
+    <TableName>OWA_FSFACILITY</TableName>
+    <TableDescription>Facility</TableDescription>
+    <Tabletype>1</Tabletype>
+    <Secondary>1</Secondary>
+    <Created>N</Created>
+    <UseSequence>0</UseSequence>
+    <UserObjects>
+      <CanCancel>Y</CanCancel>
+      <CanClose>N</CanClose>
+      <CanCreateDefaultForm>Y</CanCreateDefaultForm>
+      <CanDelete>Y</CanDelete>
+      <CanFind>Y</CanFind>
+      <CanLog>N</CanLog>
+      <LogTableName />
+      <CanYearTransfer>N</CanYearTransfer>
+      <ManageSeries>N</ManageSeries>
+      <Code>FACILITY</Code>
+      <Name>Facility Master Data</Name>
+      <ObjectType>1</ObjectType>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Created>N</Created>
+      <UseSequence>0</UseSequence>
+    </UserObjects>
+    <TableFields>
+      <FieldID>0</FieldID>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Name>IntrDednMthd</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Interest Dedn Mthd</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+      <ValidValues>
+        <TableName>OWA_FSFACILITY</TableName>
+        <FieldID>0</FieldID>
+        <IndexID>0</IndexID>
+        <Value>Flat</Value>
+        <Description>Flat</Description>
+      </ValidValues>
+      <ValidValues>
+        <TableName>OWA_FSFACILITY</TableName>
+        <FieldID>0</FieldID>
+        <IndexID>1</IndexID>
+        <Value>RB</Value>
+        <Description>Reducing Balance</Description>
+      </ValidValues>
+      <ValidValues>
+        <TableName>OWA_FSFACILITY</TableName>
+        <FieldID>0</FieldID>
+        <IndexID>2</IndexID>
+        <Value>Perf</Value>
+        <Description>% of Principal</Description>
+      </ValidValues>
+    </TableFields>
+    <TableFields>
+      <FieldID>1</FieldID>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Name>IntrRate</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Default Interest Rate</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>R</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>2</FieldID>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Name>Tenor</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Max Repmt Duration</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>Q</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>3</FieldID>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Name>upfrontPmtPcet</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Upfront Pmt of Loan %</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>%</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>4</FieldID>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Name>MaxLoanAmt</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Max. Loan Amount</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>5</FieldID>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Name>handlingChrgAmt</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Handling Charge</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>R</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>6</FieldID>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Name>benefitPeriod</Name>
+      <Type>2</Type>
+      <Size>6</Size>
+      <Description>Benefit Period</Description>
+      <EditSize>4</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>7</FieldID>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Name>noPerYear</Name>
+      <Type>2</Type>
+      <Size>6</Size>
+      <Description>No of Times Per Year</Description>
+      <EditSize>4</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>8</FieldID>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Name>lenghtOfMembership</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Lenght of Membership (Mths)</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>Q</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>9</FieldID>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Name>savingsOfLoanPct</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Min. Savings % of Loan</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>%</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>10</FieldID>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Name>insurancePct</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Insurance %</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>%</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>11</FieldID>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Name>mgtFeePct</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Management Fee%</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>%</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>12</FieldID>
+      <TableName>OWA_FSFACILITY</TableName>
+      <Name>glAcct</Name>
+      <Type>0</Type>
+      <Size>30</Size>
+      <Description>G/L Account Code</Description>
+      <EditSize>30</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+  </usertable>
+  <usertable>
+    <TableName>OWA_FSFACILITYAPPLN</TableName>
+    <TableDescription>Facility Application</TableDescription>
+    <Tabletype>3</Tabletype>
+    <Secondary>1</Secondary>
+    <Created>N</Created>
+    <UseSequence>0</UseSequence>
+    <UserObjects>
+      <CanCancel>Y</CanCancel>
+      <CanClose>Y</CanClose>
+      <CanCreateDefaultForm>Y</CanCreateDefaultForm>
+      <CanDelete>Y</CanDelete>
+      <CanFind>Y</CanFind>
+      <CanLog>N</CanLog>
+      <LogTableName />
+      <CanYearTransfer>N</CanYearTransfer>
+      <ManageSeries>Y</ManageSeries>
+      <Code>FCTYAPPLN</Code>
+      <Name>Facility Application</Name>
+      <ObjectType>3</ObjectType>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Created>N</Created>
+      <UseSequence>0</UseSequence>
+    </UserObjects>
+    <TableFields>
+      <FieldID>0</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>memberID</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Member ID</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>1</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>transDate</Name>
+      <Type>3</Type>
+      <Size>8</Size>
+      <Description>Transaction Date</Description>
+      <EditSize>8</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>2</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>facilityType</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Type of Facility</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>3</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>Description</Name>
+      <Type>0</Type>
+      <Size>100</Size>
+      <Description>Description</Description>
+      <EditSize>100</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>4</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>itemOnRequest</Name>
+      <Type>0</Type>
+      <Size>30</Size>
+      <Description>Item Request Name</Description>
+      <EditSize>30</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>5</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>Brand</Name>
+      <Type>0</Type>
+      <Size>30</Size>
+      <Description>Brand</Description>
+      <EditSize>30</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>6</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>preferredColor</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Prefered Color</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>7</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>Model</Name>
+      <Type>0</Type>
+      <Size>30</Size>
+      <Description>Model</Description>
+      <EditSize>30</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>8</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>yearManu</Name>
+      <Type>0</Type>
+      <Size>4</Size>
+      <Description>Year of Manufacture</Description>
+      <EditSize>4</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>9</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>regName</Name>
+      <Type>0</Type>
+      <Size>30</Size>
+      <Description>Registration Name</Description>
+      <EditSize>30</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>10</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>facilityValue</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Facility Value</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>11</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>loanBurdenAmt</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Loan Burdern Amount</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>12</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>savingsBal</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Savings Balance</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>13</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>handlingCharge</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Handling Charge Amount</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>14</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>upfrontPmtAmt</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Upfront Payment Amt</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>15</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>yearInServ</Name>
+      <Type>0</Type>
+      <Size>4</Size>
+      <Description>Year in service</Description>
+      <EditSize>4</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>16</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>totalRemun</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Total Remuneration</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>17</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>applnStatus</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Application Status</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+      <ValidValues>
+        <TableName>OWA_FSFACILITYAPPLN</TableName>
+        <FieldID>17</FieldID>
+        <IndexID>0</IndexID>
+        <Value>Accepted</Value>
+        <Description>Accepted</Description>
+      </ValidValues>
+      <ValidValues>
+        <TableName>OWA_FSFACILITYAPPLN</TableName>
+        <FieldID>17</FieldID>
+        <IndexID>1</IndexID>
+        <Value>Denied</Value>
+        <Description>Denied</Description>
+      </ValidValues>
+      <ValidValues>
+        <TableName>OWA_FSFACILITYAPPLN</TableName>
+        <FieldID>17</FieldID>
+        <IndexID>2</IndexID>
+        <Value>Cancelled</Value>
+        <Description>Cancelled</Description>
+      </ValidValues>
+    </TableFields>
+    <TableFields>
+      <FieldID>18</FieldID>
+      <TableName>OWA_FSFACILITYAPPLN</TableName>
+      <Name>Comments</Name>
+      <Type>0</Type>
+      <Size>100</Size>
+      <Description>Comments</Description>
+      <EditSize>100</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+  </usertable>
+  <usertable>
+    <TableName>OWA_FSFACILITYBK</TableName>
+    <TableDescription>Facility Booking</TableDescription>
+    <Tabletype>3</Tabletype>
+    <Secondary>1</Secondary>
+    <Created>N</Created>
+    <UseSequence>0</UseSequence>
+    <UserObjects>
+      <CanCancel>Y</CanCancel>
+      <CanClose>Y</CanClose>
+      <CanCreateDefaultForm>Y</CanCreateDefaultForm>
+      <CanDelete>Y</CanDelete>
+      <CanFind>Y</CanFind>
+      <CanLog>N</CanLog>
+      <LogTableName />
+      <CanYearTransfer>N</CanYearTransfer>
+      <ManageSeries>Y</ManageSeries>
+      <Code>FCTYBOOKN</Code>
+      <Name>Facility Booking</Name>
+      <ObjectType>3</ObjectType>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Created>N</Created>
+      <UseSequence>0</UseSequence>
+    </UserObjects>
+    <TableFields>
+      <FieldID>0</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>memberID</Name>
+      <Type>0</Type>
+      <Size>30</Size>
+      <Description>Member ID</Description>
+      <EditSize>30</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>1</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>transDate</Name>
+      <Type>3</Type>
+      <Size>8</Size>
+      <Description>Transaction Date</Description>
+      <EditSize>8</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>2</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>Period</Name>
+      <Type>0</Type>
+      <Size>30</Size>
+      <Description>Period</Description>
+      <EditSize>30</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>3</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>facilityType</Name>
+      <Type>0</Type>
+      <Size>30</Size>
+      <Description>Type of Facility</Description>
+      <EditSize>30</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>4</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>Description</Name>
+      <Type>0</Type>
+      <Size>100</Size>
+      <Description>Description</Description>
+      <EditSize>100</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>5</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>facilityAppnNo</Name>
+      <Type>2</Type>
+      <Size>11</Size>
+      <Description>Facility Application No.</Description>
+      <EditSize>11</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>6</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>loanAmt</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Loan Amount</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>7</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>intrRate</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Interest Rate</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>R</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>8</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>tenorRate</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Tenor Rate (in months)</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>Q</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>9</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>handlingCharge</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Handling Charge Amount</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>10</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>upfrontPmt</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Upfront Payment</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>11</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>facilityBal</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Facility Balance</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>12</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>stopDedn</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Stop Deduction</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+      <ValidValues>
+        <TableName>OWA_FSFACILITYBK</TableName>
+        <FieldID>12</FieldID>
+        <IndexID>0</IndexID>
+        <Value>Y</Value>
+        <Description>Yes</Description>
+      </ValidValues>
+      <ValidValues>
+        <TableName>OWA_FSFACILITYBK</TableName>
+        <FieldID>12</FieldID>
+        <IndexID>1</IndexID>
+        <Value>N</Value>
+        <Description>No</Description>
+      </ValidValues>
+    </TableFields>
+    <TableFields>
+      <FieldID>13</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>fctyRepmtCompl</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Repayment Completed?</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+      <ValidValues>
+        <TableName>OWA_FSFACILITYBK</TableName>
+        <FieldID>13</FieldID>
+        <IndexID>0</IndexID>
+        <Value>Y</Value>
+        <Description>Yes</Description>
+      </ValidValues>
+      <ValidValues>
+        <TableName>OWA_FSFACILITYBK</TableName>
+        <FieldID>13</FieldID>
+        <IndexID>1</IndexID>
+        <Value>N</Value>
+        <Description>No</Description>
+      </ValidValues>
+    </TableFields>
+    <TableFields>
+      <FieldID>14</FieldID>
+      <TableName>OWA_FSFACILITYBK</TableName>
+      <Name>fctyStatus</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Facility Status</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+      <ValidValues>
+        <TableName>OWA_FSFACILITYBK</TableName>
+        <FieldID>14</FieldID>
+        <IndexID>0</IndexID>
+        <Value>Posted</Value>
+        <Description>Posted</Description>
+      </ValidValues>
+      <ValidValues>
+        <TableName>OWA_FSFACILITYBK</TableName>
+        <FieldID>14</FieldID>
+        <IndexID>1</IndexID>
+        <Value>Approved</Value>
+        <Description>Approved</Description>
+      </ValidValues>
+      <ValidValues>
+        <TableName>OWA_FSFACILITYBK</TableName>
+        <FieldID>14</FieldID>
+        <IndexID>2</IndexID>
+        <Value>Declined</Value>
+        <Description>Declined</Description>
+      </ValidValues>
+      <ValidValues>
+        <TableName>OWA_FSFACILITYBK</TableName>
+        <FieldID>14</FieldID>
+        <IndexID>3</IndexID>
+        <Value>Cancelled</Value>
+        <Description>Cancelled</Description>
+      </ValidValues>
+    </TableFields>
+  </usertable>
+  <usertable>
+    <TableName>OWA_FSPAYROLLDEDN</TableName>
+    <TableDescription>Facility Monthly Payroll Dedn</TableDescription>
+    <Tabletype>3</Tabletype>
+    <Secondary>1</Secondary>
+    <Created>N</Created>
+    <UseSequence>0</UseSequence>
+    <UserObjects>
+      <CanCancel>Y</CanCancel>
+      <CanClose>Y</CanClose>
+      <CanCreateDefaultForm>Y</CanCreateDefaultForm>
+      <CanDelete>Y</CanDelete>
+      <CanFind>Y</CanFind>
+      <CanLog>N</CanLog>
+      <LogTableName />
+      <CanYearTransfer>N</CanYearTransfer>
+      <ManageSeries>Y</ManageSeries>
+      <Code>FCTYDEDN</Code>
+      <Name>Facility Payroll Deductions</Name>
+      <ObjectType>3</ObjectType>
+      <TableName>OWA_FSPAYROLLDEDN</TableName>
+      <Created>N</Created>
+      <UseSequence>0</UseSequence>
+    </UserObjects>
+    <TableFields>
+      <FieldID>0</FieldID>
+      <TableName>OWA_FSPAYROLLDEDN</TableName>
+      <Name>Period</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Payroll Period</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>1</FieldID>
+      <TableName>OWA_FSPAYROLLDEDN</TableName>
+      <Name>Description</Name>
+      <Type>0</Type>
+      <Size>100</Size>
+      <Description>Description</Description>
+      <EditSize>100</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>2</FieldID>
+      <TableName>OWA_FSPAYROLLDEDN</TableName>
+      <Name>payrollDate</Name>
+      <Type>3</Type>
+      <Size>8</Size>
+      <Description>Payroll Date</Description>
+      <EditSize>8</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>3</FieldID>
+      <TableName>OWA_FSPAYROLLDEDN</TableName>
+      <Name>memberID</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Member ID</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>4</FieldID>
+      <TableName>OWA_FSPAYROLLDEDN</TableName>
+      <Name>basicSal</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Basic Salary</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>5</FieldID>
+      <TableName>OWA_FSPAYROLLDEDN</TableName>
+      <Name>monthlySavings</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Monthly Savings</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>6</FieldID>
+      <TableName>OWA_FSPAYROLLDEDN</TableName>
+      <Name>loanBurdenAmt</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Loan Burden</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+  </usertable>
+  <usertable>
+    <TableName>OWA_FSVARIATION</TableName>
+    <TableDescription>Facility Variations</TableDescription>
+    <Tabletype>1</Tabletype>
+    <Secondary>1</Secondary>
+    <Created>N</Created>
+    <UseSequence>0</UseSequence>
+    <UserObjects>
+      <CanCancel>Y</CanCancel>
+      <CanClose>N</CanClose>
+      <CanCreateDefaultForm>Y</CanCreateDefaultForm>
+      <CanDelete>Y</CanDelete>
+      <CanFind>Y</CanFind>
+      <CanLog>N</CanLog>
+      <LogTableName />
+      <CanYearTransfer>N</CanYearTransfer>
+      <ManageSeries>N</ManageSeries>
+      <Code>Variation</Code>
+      <Name>Facility Variations</Name>
+      <ObjectType>1</ObjectType>
+      <TableName>OWA_FSVARIATION</TableName>
+      <Created>N</Created>
+      <UseSequence>0</UseSequence>
+    </UserObjects>
+    <TableFields>
+      <FieldID>0</FieldID>
+      <TableName>OWA_FSVARIATION</TableName>
+      <Name>docDate</Name>
+      <Type>3</Type>
+      <Size>8</Size>
+      <Description>Doc Date</Description>
+      <EditSize>8</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>1</FieldID>
+      <TableName>OWA_FSVARIATION</TableName>
+      <Name>currSavingsAmt</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>Current Savings</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>2</FieldID>
+      <TableName>OWA_FSVARIATION</TableName>
+      <Name>newSaving</Name>
+      <Type>4</Type>
+      <Size>16</Size>
+      <Description>New Savings</Description>
+      <EditSize>16</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType>S</EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>3</FieldID>
+      <TableName>OWA_FSVARIATION</TableName>
+      <Name>Status</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Status</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+      <ValidValues>
+        <TableName>OWA_FSVARIATION</TableName>
+        <FieldID>3</FieldID>
+        <IndexID>0</IndexID>
+        <Value>Open</Value>
+        <Description>Open</Description>
+      </ValidValues>
+      <ValidValues>
+        <TableName>OWA_FSVARIATION</TableName>
+        <FieldID>3</FieldID>
+        <IndexID>1</IndexID>
+        <Value>Processed</Value>
+        <Description>Processed</Description>
+      </ValidValues>
+      <ValidValues>
+        <TableName>OWA_FSVARIATION</TableName>
+        <FieldID>3</FieldID>
+        <IndexID>2</IndexID>
+        <Value>Closed</Value>
+        <Description>Closed</Description>
+      </ValidValues>
+    </TableFields>
+    <TableFields>
+      <FieldID>4</FieldID>
+      <TableName>OWA_FSVARIATION</TableName>
+      <Name>memberID</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Member ID</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+  </usertable>
+  <usertable>
+    <TableName>OWA_FSWITHDRAWAL</TableName>
+    <TableDescription>Facility Membership Withdrawal</TableDescription>
+    <Tabletype>3</Tabletype>
+    <Secondary>1</Secondary>
+    <Created>N</Created>
+    <UseSequence>0</UseSequence>
+    <UserObjects>
+      <CanCancel>Y</CanCancel>
+      <CanClose>Y</CanClose>
+      <CanCreateDefaultForm>Y</CanCreateDefaultForm>
+      <CanDelete>Y</CanDelete>
+      <CanFind>Y</CanFind>
+      <CanLog>N</CanLog>
+      <LogTableName />
+      <CanYearTransfer>N</CanYearTransfer>
+      <ManageSeries>Y</ManageSeries>
+      <Code>FCTYWITHD</Code>
+      <Name>Membership Withdrawal</Name>
+      <ObjectType>3</ObjectType>
+      <TableName>OWA_FSWITHDRAWAL</TableName>
+      <Created>N</Created>
+      <UseSequence>0</UseSequence>
+    </UserObjects>
+    <TableFields>
+      <FieldID>0</FieldID>
+      <TableName>OWA_FSWITHDRAWAL</TableName>
+      <Name>memberID</Name>
+      <Type>0</Type>
+      <Size>10</Size>
+      <Description>Member ID</Description>
+      <EditSize>10</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>1</FieldID>
+      <TableName>OWA_FSWITHDRAWAL</TableName>
+      <Name>Date</Name>
+      <Type>3</Type>
+      <Size>8</Size>
+      <Description>Date of Withdrawal</Description>
+      <EditSize>8</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+    <TableFields>
+      <FieldID>2</FieldID>
+      <TableName>OWA_FSWITHDRAWAL</TableName>
+      <Name>Reason</Name>
+      <Type>0</Type>
+      <Size>100</Size>
+      <Description>Reason</Description>
+      <EditSize>100</EditSize>
+      <Mandatory>N</Mandatory>
+      <Created>N</Created>
+      <EditType> </EditType>
+    </TableFields>
+  </usertable>
+</Tables>
