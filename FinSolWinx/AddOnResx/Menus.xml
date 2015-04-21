@@ -1,24 +1,28 @@
 <Application>
 	<Menus>
 		<action type="remove">
-			<Menu UniqueID="OWA_MOR"/>
+			<Menu UniqueID="OWA_FS"/>
 		</action>
 	</Menus>
 	<Menus>
 		<action type="add">
-			<Menu Checked="0" Enabled="1" FatherUID="3584" String="Plant Maintenance" Type="2" UniqueID="OWA_MOR" Image="" position="4">
+			<Menu Checked="0" Enabled="1" FatherUID="43520" String="Cooperatives Financial Solution" Type="2" UniqueID="OWA_FS" Image="" position="13">
 				<Menus>
 					<action type="add">
-            <Menu Checked="0"  Enabled="1" FatherUID="OWA_MOR" String="Setup" Type="2" UniqueID="OWA_MORSETUP" Image="">
+            <Menu Checked="0"  Enabled="1" FatherUID="OWA_FS" String="Setup" Type="2" UniqueID="OWA_FSSETUP" Image="">
               <Menus>
                 <action type="add">
-                  <Menu Checked="0" Enabled="1" FatherUID="OWA_MORSETUP" String="Configuration" Type="1" UniqueID="m_config"/>
+                  <Menu Checked="0" Enabled="1" FatherUID="OWA_FSSETUP" String="Facility" Type="1" UniqueID="m_fcty"/>
+                  <Menu Checked="0" Enabled="1" FatherUID="OWA_FSSETUP" String="Accounts Determination" Type="1" UniqueID="m_fctyacct"/>
                 </action>
               </Menus>
             </Menu>
-
-            <Menu Checked="0" Enabled="1" FatherUID="OWA_MOR" String="Mtce Order" Type="1" UniqueID="m_mtceord"/>
-
+            <Menu Checked="0" Enabled="1" FatherUID="OWA_FS" String="Savings Variation" Type="1" UniqueID="m_var"/>
+            <Menu Checked="0" Enabled="1" FatherUID="OWA_FS" String="Payroll Deductions" Type="1" UniqueID="m_prlldedn"/>
+            <Menu Checked="0" Enabled="1" FatherUID="OWA_FS" String="Facility Application" Type="1" UniqueID="m_fctyappl"/>
+            <Menu Checked="0" Enabled="1" FatherUID="OWA_FS" String="Facility Booking" Type="1" UniqueID="m_fctybookn"/>
+            <Menu Checked="0" Enabled="1" FatherUID="OWA_FS" String="Member Withdrawal" Type="1" UniqueID="m_withd"/>
+            
           </action>
 				</Menus>
         

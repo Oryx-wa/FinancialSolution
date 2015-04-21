@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Oryx>
-  <Forms Name="PMtceOrd_b1f" MenuUID="m_mtceord" PermID="OWA_MOR001" PermCategory="OWA_MOR"/>
-  
+  <Forms Name="Facility" MenuUID="m_fcty" PermID="OWA_FS001" PermCategory="OWA_FS"/>
+  <Forms Name="FctyApplication" MenuUID="m_fctyappl" PermID="OWA_FS002" PermCategory="OWA_FS"/>
+  <Forms Name="FctyBooking" MenuUID="m_fctybookn" PermID="OWA_FS003" PermCategory="OWA_FS"/>
+  <Forms Name="PayrolDedn" MenuUID="m_prlldedn" PermID="OWA_FS004" PermCategory="OWA_FS"/>
+  <Forms Name="Variation" MenuUID="m_var" PermID="OWA_FS005" PermCategory="OWA_FS"/>
+  <Forms Name="Withdrawal" MenuUID="m_withd" PermID="OWA_FS006" PermCategory="OWA_FS"/>
+  <Forms Name="FctyAccounts" MenuUID="m_fctyacct" PermID="OWA_FS007" PermCategory="OWA_FS"/>
 </Oryx>

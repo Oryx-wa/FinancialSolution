@@ -2,31 +2,30 @@
 Option Explicit On
 
 Imports SAPbouiCOM.Framework
-Imports SAPbobsCOM
 Imports SBO.SboAddOnBase
+Imports OWA.SBO.FinSolnLib
 
 <FormAttribute("OWA.SBO.FinSolnWinx.Dividend", "AddOnForms/Dividend.b1f")>
     Friend Class Dividend
     Inherits UserFormBaseClass
 
+    Private WithEvents txtmemid As SAPbouiCOM.EditText
+
     Public Sub New()
     End Sub
 
+    Protected Overrides Sub InitBase(ByVal pAddOn As SboAddon)
+        MyBase.InitBase(pAddOn)
+        Me.CreateObject(New SBOWithdrawal(pAddOn, Me.UIAPIRawForm))
+    End Sub
+
+    Private Sub ChooseFromListAfter(ByVal sboObject As System.Object, ByVal pVal As SAPbouiCOM.SBOItemEventArg) _
+        Handles txtmemid.ChooseFromListAfter
+        m_BaseObject.OnChooseFromListAfter(sboObject, pVal)
+    End Sub
+
     Public Overrides Sub OnInitializeComponent()
-        Me.StaticText0 = CType(Me.GetItem("Item_0").Specific, SAPbouiCOM.StaticText)
-        Me.EditText0 = CType(Me.GetItem("docentry").Specific, SAPbouiCOM.EditText)
-        Me.StaticText1 = CType(Me.GetItem("Item_2").Specific, SAPbouiCOM.StaticText)
-        Me.EditText1 = CType(Me.GetItem("Item_3").Specific, SAPbouiCOM.EditText)
-        Me.StaticText2 = CType(Me.GetItem("Item_4").Specific, SAPbouiCOM.StaticText)
-        Me.EditText2 = CType(Me.GetItem("Item_5").Specific, SAPbouiCOM.EditText)
-        Me.StaticText3 = CType(Me.GetItem("Item_6").Specific, SAPbouiCOM.StaticText)
-        Me.EditText3 = CType(Me.GetItem("Item_7").Specific, SAPbouiCOM.EditText)
-        Me.StaticText4 = CType(Me.GetItem("Item_8").Specific, SAPbouiCOM.StaticText)
-        Me.EditText4 = CType(Me.GetItem("Item_9").Specific, SAPbouiCOM.EditText)
-        Me.StaticText5 = CType(Me.GetItem("Item_10").Specific, SAPbouiCOM.StaticText)
-        Me.EditText5 = CType(Me.GetItem("Item_11").Specific, SAPbouiCOM.EditText)
-        Me.Button0 = CType(Me.GetItem("1").Specific, SAPbouiCOM.Button)
-        Me.Button1 = CType(Me.GetItem("2").Specific, SAPbouiCOM.Button)
+        Me.txtmemid = CType(Me.GetItem("memid").Specific, SAPbouiCOM.EditText)
         Me.OnCustomInitialize()
 
     End Sub
@@ -34,22 +33,8 @@ Imports SBO.SboAddOnBase
     Public Overrides Sub OnInitializeFormEvents()
 
     End Sub
-    Private WithEvents StaticText0 As SAPbouiCOM.StaticText
 
     Private Sub OnCustomInitialize()
 
     End Sub
-    Private WithEvents EditText0 As SAPbouiCOM.EditText
-    Private WithEvents StaticText1 As SAPbouiCOM.StaticText
-    Private WithEvents EditText1 As SAPbouiCOM.EditText
-    Private WithEvents StaticText2 As SAPbouiCOM.StaticText
-    Private WithEvents EditText2 As SAPbouiCOM.EditText
-    Private WithEvents StaticText3 As SAPbouiCOM.StaticText
-    Private WithEvents EditText3 As SAPbouiCOM.EditText
-    Private WithEvents StaticText4 As SAPbouiCOM.StaticText
-    Private WithEvents EditText4 As SAPbouiCOM.EditText
-    Private WithEvents StaticText5 As SAPbouiCOM.StaticText
-    Private WithEvents EditText5 As SAPbouiCOM.EditText
-    Private WithEvents Button0 As SAPbouiCOM.Button
-    Private WithEvents Button1 As SAPbouiCOM.Button
 End Class

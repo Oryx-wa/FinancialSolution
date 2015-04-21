@@ -85,11 +85,17 @@
     <Compile Include="AddOnForms\Facility.b1f.vb">
       <DependentUpon>Facility.b1f</DependentUpon>
     </Compile>
+    <Compile Include="AddOnForms\FctyAccounts.b1f.vb">
+      <DependentUpon>FctyAccounts.b1f</DependentUpon>
+    </Compile>
     <Compile Include="AddOnForms\FctyApplication.b1f.vb">
       <DependentUpon>FctyApplication.b1f</DependentUpon>
     </Compile>
     <Compile Include="AddOnForms\FctyBooking.b1f.vb">
       <DependentUpon>FctyBooking.b1f</DependentUpon>
+    </Compile>
+    <Compile Include="AddOnForms\PayrolDedn.b1f.vb">
+      <DependentUpon>PayrolDedn.b1f</DependentUpon>
     </Compile>
     <Compile Include="AddOnForms\Variation.b1f.vb">
       <DependentUpon>Variation.b1f</DependentUpon>
@@ -127,12 +133,30 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="AddOnForms\Dividend.b1f" />
-    <None Include="AddOnForms\Facility.b1f" />
-    <None Include="AddOnForms\FctyApplication.b1f" />
-    <None Include="AddOnForms\FctyBooking.b1f" />
-    <None Include="AddOnForms\Variation.b1f" />
-    <None Include="AddOnForms\Withdrawal.b1f" />
+    <None Include="AddOnForms\Dividend.b1f">
+      <FormCategory>UserForm</FormCategory>
+    </None>
+    <None Include="AddOnForms\Facility.b1f">
+      <FormCategory>UserForm</FormCategory>
+    </None>
+    <None Include="AddOnForms\FctyAccounts.b1f">
+      <FormCategory>UserForm</FormCategory>
+    </None>
+    <None Include="AddOnForms\FctyApplication.b1f">
+      <FormCategory>UserForm</FormCategory>
+    </None>
+    <None Include="AddOnForms\FctyBooking.b1f">
+      <FormCategory>UserForm</FormCategory>
+    </None>
+    <None Include="AddOnForms\PayrolDedn.b1f">
+      <FormCategory>UserForm</FormCategory>
+    </None>
+    <None Include="AddOnForms\Variation.b1f">
+      <FormCategory>UserForm</FormCategory>
+    </None>
+    <None Include="AddOnForms\Withdrawal.b1f">
+      <FormCategory>UserForm</FormCategory>
+    </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
