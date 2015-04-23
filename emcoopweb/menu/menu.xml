@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+	<view name="personal" Text="Personal Details" url="edit_details.aspx" parent="none" role="members"></view>
+    <view name="thrift" Text="Thrift" url="thrift.aspx" parent="none" role="members"></view>
+    <view name="hot" Text="Hot Cash" url="hot_cash.aspx" parent="none" role="members"></view>
+    <view name="other" Text="Other Loans" url="" parent="none" role="members">
+        <view name="hap" Text="House Appliance Programme" url="home_appliance_request.aspx" parent="other" role="members"></view>
+        <view name="cap" Text="Car Acquisition Programme" url="car_acquisition_request.aspx" parent="other" role="members"></view>
+        <view name="travel" Text="Travel With Ease Programme" url="travel.aspx" parent="other" role="members"></view>
+    </view>
+	
+    <view name="mortgage" Text="Mortgage Loan" url="" parent="none" role="members">
+        <view name="access" Text="Access Bank" url="bank.aspx" parent="mortgage" role="members"></view>
+        <view name="fidelity" Text="Fidelity Bank" url="bank.aspx" parent="mortgage" role="members"></view>
+        <view name="gtb" Text="Guaranty Trust Bank" url="bank.aspx" parent="mortgage" role="members"></view>
+    </view>
+
+	<view name="regrequest" Text="Manage Registration Request" url="home.aspx" parent="none" role="staff"></view>
+	<view name="haprequest" Text="Manage Home Appliance Request" url="request_detail.aspx?type=hap" parent="none" role="staff"></view>
+	<view name="caprequest" Text="Manage car Acquisition Request" url="request_detail.aspx?type=cap" parent="none" role="staff"></view>
+	
+</menu>

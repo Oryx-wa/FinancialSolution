@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+    <view name="thrift" Text="Thrift" url="thrift.aspx" parent="none" role="members"></view>
+    <view name="hot" Text="Hot Cash" url="hotcash.aspx" parent="none" role="members"></view>
+    <view name="other" Text="Other Loans" url="" parent="none" role="members">
+        <view name="hap" Text="House Appliance Programme" url="home_appliance_request.aspx" Parent="other" role="members"></view>
+        <view name="cap" Text="Car Acquisition Programme" url="car_acquisition_request.aspx" Parent="other" role="members"></view>
+        <view name="travel" Text="Travel With Ease Programme" url="travel.aspx" Parent="other" role="members"></view>
+    </view>
+    <view name="mortgage" Text="Mortgage Loan" url="" parent="none" role="members">
+        <view name="access" Text="Access Bank" url="bank.aspx" parent="mortgage" role="members"></view>
+        <view name="fidelity" Text="Fidelity Bank" url="bank.aspx" parent="mortgage" role="members"></view>
+        <view name="gtb" Text="Guaranty Trust Bank" url="bank.aspx" parent="mortgage" role="members"></view>
+    </view>
+</menu>
